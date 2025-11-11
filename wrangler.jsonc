@@ -1,0 +1,9 @@
+{
+  "name": "proud-bird-af72",
+  "compatibility_date": "2025-11-11",
+  "main": "index.html",
+  "assets": {
+    "directory": ".",
+    "binding": "ASSETS"
+  }
+}
