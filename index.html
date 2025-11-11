@@ -45,7 +45,6 @@
     }
   </style>
 
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-LMX888DS16"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -63,27 +62,8 @@
     </iframe>
 
     <div class="photo">
-      <img id="photo" src="https://source.unsplash.com/featured/?portrait,woman" alt="Photo" />
+      <img id="photo" src="/ai_kira.webp" alt="AI Kira" />
     </div>
   </div>
-
-  <script>
-    const photo = document.getElementById('photo');
-
-    function updatePhoto() {
-      const url = `https://source.unsplash.com/featured/?portrait,woman&${Date.now()}`;
-      const newImg = new Image();
-      newImg.src = url;
-      newImg.onload = () => {
-        photo.style.opacity = 0;
-        setTimeout(() => {
-          photo.src = url;
-          photo.style.opacity = 1;
-        }, 1000);
-      };
-    }
-
-    setInterval(updatePhoto, 10000); // 10sec
-  </script>
 </body>
 </html>
