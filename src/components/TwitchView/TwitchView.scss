@@ -1,0 +1,19 @@
+.twitch-view {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 4px;
+    align-items: stretch;
+
+    &__player {
+        flex: 1;
+        flex-basis: 80%;
+        height: 100vh;
+    }
+
+    &__chat {
+        width: 300px;
+        flex: 0;
+        height: 100vh;
+    }
+}
